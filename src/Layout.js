@@ -113,7 +113,7 @@ var computeLayout = (function() {
   }
 
   function isUndefined(value) {
-    return value === undefined || Number.isNaN(value);
+    return value === undefined || isNaN(value);
   }
 
   function isRowDirection(flexDirection) {
