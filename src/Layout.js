@@ -8,7 +8,9 @@
  */
 
 var computeLayout = (function() {
-
+  if (Number.isNaN === undefined) {
+    Number.isNaN = isNaN;
+  }
   var POSITIVE_FLEX_IS_AUTO = false;
 
   var gCurrentGenerationCount = 0;
@@ -113,7 +115,7 @@ var computeLayout = (function() {
   }
 
   function isUndefined(value) {
-    return value === undefined || isNaN(value);
+    return value === undefined || Number.isNaN(value);
   }
 
   function isRowDirection(flexDirection) {
