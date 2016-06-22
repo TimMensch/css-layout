@@ -2,7 +2,7 @@
   "name": "css-layout",
   "version": "1.1.1",
   "description": "Reimplementation of CSS layout using pure JavaScript",
-  "main": "dist/css-layout.js",
+  "main": "index.js",
   "scripts": {
     "watch": "grunt watch",
     "test": "grunt ci"
