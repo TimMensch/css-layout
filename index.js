@@ -1,5 +1,5 @@
 
-computeLayout = require("./src/Layout.js");
+var computeLayout = require("./src/Layout.js");
 
 module.exports.cssLayout = function (node) {
     /*eslint-disable */
